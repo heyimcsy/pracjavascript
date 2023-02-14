@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <script>
 "use strict";
 
@@ -9,4 +9,72 @@ function showMessage(with, text) { // 인자: from, text
 showMessage('Ann', 'Hello!'); // Ann: Hello! (*)
 showMessage('Ann', "What's up?"); // Ann: What's up? (**)
 showMessage('숙자': '머라는거야')
+</script> -->
+
+<!-- <!DOCTYPE html>
+<script>
+"use strict";
+
+// 매개변수 'count'가 `undefined` 또는 `null`이면 'unknown'을 출력해주는 함수
+function showCount(count) {
+  alert(count ?? "unknown");
+}
+
+showCount(0); // 0
+showCount(null); // unknown
+showCount(); // unknown
+</script> -->
+
+<!-- <!DOCTYPE html>
+<script>
+"use strict";
+
+function sum(a, b) {
+  return a + b;
+}
+
+let result = sum(1, 2);
+alert( result ); // 3
+</script> -->
+
+<!-- <!DOCTYPE html>
+<script>
+"use strict";
+
+function checkAge(age) {
+  if (age >= 18) {
+    return true; 
+  } else {
+    return confirm('보호자의 동의를 받으셨나요?');
+  }
+}
+
+let age = prompt('나이를 알려주세요', 18);
+
+if ( checkAge(age) ) {
+  alert( '접속 허용' );
+} else {
+  alert( '접속 차단' );
+}
+</script> -->
+
+<!DOCTYPE html>
+<script>
+"use strict";
+
+function showPrimes(n) {
+
+for (let i = 2; i < n; i++) {
+  if (!isPrime(i)) continue;
+
+  alert(i);  // a prime
+}
+}
+
+function isPrime(n) {
+for (let i = 2; i < n; i++) {
+  if ( n % i == 0) return false;
+}
+return true;
+}
 </script>
